@@ -1,0 +1,86 @@
+/* LOGIN SCREEN CUSTOMISATION */
+
+body, html { 
+	background-color: #990033; 
+	
+}
+
+.login h1 a { 
+	background-image: url('/wp-content/themes/WSU/images/login_logo.gif'); 
+	background-size: 280px auto; 
+	width: 300px; 
+	height: 120px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+				
+#backtoblog {
+	display: none;
+}
+
+.login #nav{ 
+	margin-left: 10px;
+	padding: 0;
+}
+
+.login #nav a{
+	color: #000;
+	font-weight: bold;
+}
+
+.login #nav a:hover{
+	color: #663399;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.login label{
+	color: #000;
+}
+	
+#nav{ 
+	text-shadow:none;
+}
+		
+form { 
+	-moz-border-radius: 0; 
+	-moz-box-shadow: none; 
+	border: 0;
+}
+		
+.login form {
+	box-shadow: none; 
+	padding: 23px 8px 20px; 
+	margin-left:3px;
+}
+
+#login{ 
+	background-color: #fff;
+    border:0;
+	color: #000;
+    margin: 7em auto;
+    padding: 25px 30px 25px 25px;
+    width: 320px;
+	border-radius: 0px;
+
+	box-shadow: none;
+}
+
+#loginform{
+	background-color: #fff;
+}
+
+.wp-core-ui .button-primary{
+	border: 1px solid #000;
+	background-color: #000;
+	border-color: #000;
+	text-shadow: none;
+}
+
+.wp-core-ui .button-primary:hover{
+	background-color: #663399;
+	color: #fff;
+	border: 1px solid #663399;
+	border-color: #663399;
+	text-shadow: none;
+}

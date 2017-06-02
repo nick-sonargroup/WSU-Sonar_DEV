@@ -1,0 +1,57 @@
+$white: #ffffff;
+$black: #000000;
+$red: #b01b43;
+$dark_red: #5e2430;
+$pink: #ff7673;
+$light_grey: #eaeaec;
+$grey: #666666;
+$dark_grey: #262223;
+$blue: #019ad4;
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin hover-state {
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
+
+$grid-columns:      12;
+$grid-gutter-width-base: 30px;
+
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base, // 30px
+  sm: $grid-gutter-width-base, // 30px
+  md: $grid-gutter-width-base, // 30px
+  lg: $grid-gutter-width-base, // 30px
+  xl: $grid-gutter-width-base  // 30px
+);
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  //sm: 540px,
+  //md: 720px,
+  //lg: 960px,
+  //xl: 1140px
+);
+

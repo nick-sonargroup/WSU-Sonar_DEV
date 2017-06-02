@@ -1,0 +1,2 @@
+[15-May-2017 00:19:48 UTC] PHP Warning:  require_once(bs4navwalker.php): failed to open stream: No such file or directory in /home/stagingwsusonard/public_html/wp-content/themes/WSU/functions.php on line 102
+[15-May-2017 00:19:48 UTC] PHP Fatal error:  require_once(): Failed opening required 'bs4navwalker.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/stagingwsusonard/public_html/wp-content/themes/WSU/functions.php on line 102

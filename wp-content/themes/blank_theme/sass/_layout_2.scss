@@ -1,0 +1,261 @@
+// NK FOR DEV ONLY
+
+// COLOURS
+
+$white: #ffffff;
+$black: #000000;
+$red: #b01b43;
+$dark_red: #5e2430;
+$pink: #ff7673;
+$grey: #eaeaec;
+$dark_grey: #262223;
+$blue: #019ad4;
+
+// SIZES
+
+$width-ipad: 700px;
+$width-mobile: 500px;
+
+// DECORATIVE IMAGE
+
+section.content_builder.decorative_image{
+	height: auto;
+	background-size: cover;
+	background-position: center top;
+	
+	// CONTENT WITHIN
+		
+	.container{
+		
+		.row{
+			
+			.col-sm-12{
+				position: relative;
+			
+				.call_out{
+				/*
+					position: absolute;
+					left: 15px;
+					top: auto;
+					bottom: auto;
+					z-index: 100;
+					display: none;
+				*/ 
+					
+					p{
+						margin-bottom: 5px;
+					}
+					
+					.form-control{
+						margin-top: 15px;
+					}
+				}
+				
+			
+				img.content_width{
+					position: relative;
+					width: 100%;
+					height: auto;
+					z-index: 10;
+				}
+				
+				.call_out_edge_to_edge{
+					margin-top: 80px;
+				}
+			}
+		}
+	}
+
+	
+		
+	// VARIABLE COLOURS & IMAGE BEHAVIOUR - IPAD
+	
+	&.white.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $white;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+
+	&.black.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $black;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.light_grey.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $grey;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.dark_grey.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $dark_grey;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.red.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $red;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.pink.ipad{
+		
+		@media (max-width: $width-ipad + 40){
+			background-image: none!important;
+			background-color: $pink;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	// VARIABLE COLOURS & IMAGE BEHAVIOUR - MOBILE
+	
+	&.white.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $white;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+
+	&.black.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $black;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.light_grey.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $grey;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.dark_grey.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $dark_grey;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+	
+	&.red.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $red;
+			
+			img.content_width{
+				display: none!important;
+			}
+		}
+		
+	}
+	
+	&.pink.mobile{
+		
+		@media (max-width: $width-mobile + 40){
+			background-image: none!important;
+			background-color: $pink;
+			
+			img.content_width{
+				display: none;
+			}
+		}
+		
+	}
+
+}
+
+// VARIABLE HEIGHTS 
+	
+.auto{
+	height: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+	
+.small{		
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.medium{
+	
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+
+.large{
+	padding-top: 220px;
+	padding-bottom: 220px;
+}
+
+
+.content_width_image{
+	background-size: cover;
+}

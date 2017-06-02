@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="#">
+    <meta name="description" content="">
+    <title>Test</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.1.1.slim.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e26559f234.js"></script>
+
+    <style>
+        .navbar-side {
+            height: 100%;
+            width: 25%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 0;
+            list-style: none;
+            border-left: 2px solid #ccc;
+            background-color: #f7f7f9;
+            overflow-y: scroll;
+            z-index: 1000;
+        }
+        
+        .navbar-side-item {
+            padding: 1.5rem 0;
+            margin: 0;
+            border-bottom: 2px solid #ccc;
+            height: 5rem;
+        }
+        
+        .side-link {
+            padding-left: 2rem;
+        }
+        
+        .navbar-side {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+            -webkit-transition: 500ms ease;
+            transition: 500ms ease;
+        }
+        
+        .reveal {
+            -webkit-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            transform: translateX(0%);
+            -webkit-transition: 500ms ease;
+            transition: 500ms ease;
+        }
+        
+        .overlay {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            background-color: #ccc;
+            opacity: 0.6;
+            z-index: 990;
+        }
+        
+        .navbar-side {
+            @include media-breakpoint-up(xs) {
+                width: 85%;
+            }
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+            }
+            @include media-breakpoint-up(md) {
+                width: 25%;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar fixed-top" role="navigation">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <button class="p-2 navbar-toggler" id="navbarSideButton" type="button">&#9776;</button>
+            <a class="navbar-brand" href="#">Brand</a>
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Apply <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Search</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--<ul class="navbar-side" id="navbarSide">
+            <li class="navbar-side-item">
+                <a href="#" class="side-link"><span class="close">&#10005;</span></a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#" class="side-link">Signup</a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#" class="side-link">Signup</a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#" class="side-link">Signup</a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#" class="side-link">Signup</a>
+            </li>
+        </ul>
+        <div class="overlay"></div>-->
+        
+    </nav>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="py-4">
+                            <p>copyright</p>
+                        </div>
+                        <div class="py-4">
+                            menu
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Open navbarSide when button is clicked
+            $('#navbarSideButton').on('click', function() {
+                $('#navbarSide').addClass('reveal');
+                $('.overlay').show();
+            });
+
+            // Close navbarSide when the outside of menu is clicked
+            $('.overlay, .close').on('click', function() {
+                $('#navbarSide').removeClass('reveal');
+                $('.overlay').hide();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

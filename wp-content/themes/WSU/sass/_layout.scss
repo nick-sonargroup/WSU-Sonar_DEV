@@ -1,0 +1,22 @@
+// SITE LAYOUT
+
+// BODY
+
+body, *{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: 'Helvetica Medium';
+} 
+
+body{
+	background-image: none;
+	background-color: #fff; 
+	font-family: 'Helvetica Medium';
+	
+	// FOR MOBILE MENU
+	@media (max-width: $width-ipad), screen and (max-device-width : $width-mobile) {
+		
+	}
+}
+

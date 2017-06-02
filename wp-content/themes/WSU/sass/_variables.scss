@@ -1,0 +1,124 @@
+// VARIABLES
+
+// COLOURS
+
+$light_gray: #e8eaeb;
+$very_light_gray: #f8f9f9;
+$dark_gray: #444;
+
+$light_blue: #c3e3ee;
+$blue: #96c8da;
+$blue_secondary: #00719c;
+$dark_blue: #00415d;
+$very_dark_blue: #00253c;
+
+$green: #78c040;
+$dark_green: #3f7122;
+$very_dark_green: #465300;
+
+$orange: #d88818;
+
+$purple: #7C2882;
+
+$red: #b30409;
+
+$white: #ffffff;
+$black: #000000;
+
+// LAYOUT 
+
+$gutter: 15px;
+
+// MIXINS 
+
+// OPACITY
+
+@mixin opacityAnim{
+	-webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    -o-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+
+@mixin colorAnim{
+	-webkit-transition: color 300ms ease-out;
+    -moz-transition: color 300ms ease-out;
+    -o-transition: color 300ms ease-out;
+    transition: color 300ms ease-out;
+}
+
+@mixin allAnim{
+	-webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+// RESPONSIVENESS 
+
+$width-desktop: 1200px;
+$width-interim: 940px;
+$width-ipad: 720px;
+$width-mobile: 320px;
+
+// MOBILE 
+
+$mobile-width: 92%;
+$mobile-gutter: 4%;
+
+#wrapper{	
+	width: 100%;
+	height: auto;
+	display: inline-block;	
+	overflow: hidden;
+}
+
+.section{
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 10px;
+	padding-top: $gutter;
+	padding-bottom: $gutter;
+	text-align: center;
+}
+
+.container{
+	clear: both;
+	display: inline-block;
+	width: $width-desktop;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: normal;
+	text-align: center;
+	
+	@media (max-width: $width-desktop + 40){
+		width: $width-interim ;
+	}
+	
+	@media (max-width: $width-interim + 40){
+		width: $width-ipad ;
+	}
+	
+	@media (max-width: $width-ipad), screen and (max-device-width : $width-mobile) {
+		width: 92%;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+
+// INITIAL MOBILE & DESKTOP CONTROL
+
+.desktop{
+	display: block;
+}
+	
+.mobile{
+	display: none;
+}
+
+// HIDDEN
+
+.hidden{
+	display: none;
+}

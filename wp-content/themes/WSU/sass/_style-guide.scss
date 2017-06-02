@@ -1,0 +1,79 @@
+// STYLE GUIDE
+
+#content_wrapper{
+	
+	h1, h2, h3, h4, h5, h6{
+		clear: both;
+		margin-bottom: $gutter;
+		font-size: 14pt;
+		font-family: 'Helvetica Light';
+		line-height: normal;	
+		color: $dark_blue;
+	}
+	
+	h1{
+		font-family: 'Helvetica Light';
+		font-weight: normal;
+		font-size: 21pt;
+		letter-spacing: 0.1pt;
+		color: $dark_blue;
+	
+	}
+	
+	h2{
+		margin-top: 50px;
+		font-family: 'Helvetica medium';
+		font-weight: normal;
+		font-size: 23pt;
+		letter-spacing: 0.2pt;
+	}
+	
+	h3{
+		font-family: 'Helvetica Light';
+		font-weight: normal;
+		font-size: 18pt;
+		letter-spacing: 0.2pt;
+	}
+
+	
+	p, a, li, label, td, th, legend{
+		font-family: 'Helvetica Light';
+		font-weight: normal;
+		font-size: 14pt;
+		letter-spacing: 0.2pt;
+		line-height: 19pt;
+		color: $dark_blue;
+	
+	}
+	
+	p, ul, ol{
+		margin-bottom: $gutter;
+	}
+	
+	ul, ol{
+		margin-left: $gutter * 3;
+		margin-bottom: $gutter * 2;
+		
+		li{
+			list-style-position: outside;
+		}
+	}
+	
+	ul{
+		ul{
+			margin-bottom: 0;
+		}
+	}
+	
+	a{
+		font-weight: bold;
+		color: $dark_green;
+		
+		&:hover{
+			color: $dark_green;
+			text-decoration: none;
+		}
+	}
+
+}
+
